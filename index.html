@@ -21,6 +21,17 @@
             transition: 0.5s ease;
 
         }
+         .right a {
+            display: none;
+        }
+
+        /* For tablet and PC: show the list items */
+        @media (min-width: 768px) {
+            .right a {
+                display: block;
+            }
+        }
+    
         nav{height: 40px;
             display: flex;
             justify-content: space-around;
@@ -31,6 +42,8 @@
             display: flex;
             justify-content: center;
         }
+    
+    
         nav ul a{
             list-style: none;
             margin: 0 10px;
@@ -40,7 +53,7 @@
         }
         .left{
             font-size: 1.5rem;
-            font-weight: 600;
+            font-weight: 500;
             color: white;
             margin: -105px;
          
@@ -48,6 +61,7 @@
         .right a:hover{
             color: white;
         }
+    
         .firstsection{
             display: flex;
             justify-content: space-around;
@@ -238,6 +252,95 @@
             margin: 10px 10px;
             font-size: 1rem;
         }
+        @media (max-width: 768px) {
+    .firstsection {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .firstsection > div {
+        width: 100%;
+    }
+
+    .rightsection img {
+        width: 80%;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .right1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .left {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    nav ul a {
+        margin: 5px 0;
+    }
+}
+
+/* Smaller devices */
+@media (max-width: 480px) {
+    .purple {
+        font-size: 30px;
+    }
+
+    #element {
+        font-size: 30px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+
+    .achievement-card {
+        max-width: 90%;
+        margin: 10px auto;
+    }
+
+    .achievement-title {
+        font-size: 1.2em;
+    }
+
+    .about {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        height: auto;
+        padding: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer a {
+        margin: 5px 0;
+    }
+}
         /*--------FOR CUSTOM SCROLLBAR--------*/
         ::-webkit-scrollbar {
             width: 10px;
